@@ -1,0 +1,2832 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO Primary -->
+  <title>Nordeste Ambiental | Higiene Sustentável e Biorremediação em Recife</title>
+  <meta name="description" content="Soluções naturais de higiene, limpeza e biorremediação para empresas em Recife e no Nordeste. Produtos biotecnológicos 100% naturais, sem toxinas. Solicite um orçamento agora." />
+  <meta name="keywords" content="higiene sustentável Recife, biorremediação Nordeste, produtos de limpeza naturais, higiene hospitalar Recife, limpeza industrial Pernambuco, biorremedição wastewater, Nordeste Ambiental" />
+  <meta name="author" content="Nordeste Ambiental" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://neambiental.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://neambiental.com/" />
+  <meta property="og:title" content="Nordeste Ambiental | Higiene Sustentável e Biorremediação" />
+  <meta property="og:description" content="Soluções naturais de higiene e biorremediação para hospitais, indústrias alimentícias, escolas e mais. Atendemos Recife e todo o Nordeste." />
+  <meta property="og:image" content="https://neambiental.com/og-image.jpg" />
+  <meta property="og:locale" content="pt_BR" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nordeste Ambiental | Higiene Sustentável" />
+  <meta name="twitter:description" content="Soluções naturais de higiene e biorremediação para Recife e Nordeste." />
+
+  <!-- Schema.org LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Nordeste Ambiental",
+    "description": "Soluções naturais de higiene, limpeza e biorremediação para empresas no Nordeste do Brasil.",
+    "url": "https://neambiental.com",
+    "telephone": "+55-81-93300-9302",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "R. Visc. de Abaeté, nº 83",
+      "addressLocality": "Recife",
+      "addressRegion": "PE",
+      "addressCountry": "BR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -8.0522,
+      "longitude": -34.9286
+    },
+    "areaServed": "Nordeste do Brasil",
+    "sameAs": ["https://www.instagram.com/ne.ambiental"]
+  }
+  </script>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="ico_neambiental.png" />
+  <link rel="apple-touch-icon" href="ico_neambiental.png" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    /* ============================================================
+       RESET & TOKENS
+    ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --dark:   #14351C;
+      --dark2:  #0d2413;
+      --lime:   #86C240;
+      --lime2:  #6fa832;
+      --soft:   #c8d9a8;
+      --soft2:  #e8f0d8;
+      --cream:  #f5f8f0;
+      --mint:   #ecf5e2;
+      --white:  #ffffff;
+      --gray:   #f9fbf6;
+      --text:   #192b1a;
+      --muted:  #5a7048;
+      --border: #dce9c8;
+
+      --font-head: 'Plus Jakarta Sans', sans-serif;
+      --font-body: 'Inter', sans-serif;
+
+      --radius: 6px;
+      --radius-lg: 14px;
+      --radius-xl: 24px;
+
+      --ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --transition: 0.3s var(--ease);
+
+      --shadow-sm: 0 2px 12px rgba(20,53,28,0.07);
+      --shadow-md: 0 8px 32px rgba(20,53,28,0.10);
+      --shadow-lg: 0 16px 56px rgba(20,53,28,0.12);
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--text);
+      background: var(--white);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { display: block; max-width: 100%; }
+    a { text-decoration: none; color: inherit; }
+    ul { list-style: none; }
+
+    /* ============================================================
+       UTILITIES
+    ============================================================ */
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-label {
+      font-family: var(--font-body);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--lime2);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      border-radius: var(--radius);
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+      border: none;
+      transition: var(--transition);
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--lime);
+      color: var(--dark2);
+    }
+    .btn-primary:hover {
+      background: var(--lime2);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(134,194,64,0.35);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--dark);
+      border: 2px solid var(--border);
+    }
+    .btn-outline:hover {
+      border-color: var(--dark);
+      background: var(--cream);
+    }
+
+    .btn-outline-white {
+      background: transparent;
+      color: var(--white);
+      border: 2px solid rgba(255,255,255,0.35);
+    }
+    .btn-outline-white:hover {
+      border-color: var(--white);
+      background: rgba(255,255,255,0.08);
+    }
+
+    .btn-dark {
+      background: var(--dark);
+      color: var(--white);
+    }
+    .btn-dark:hover {
+      background: var(--dark2);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-md);
+    }
+
+    /* ============================================================
+       WHATSAPP FLOAT
+    ============================================================ */
+    .wpp-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 9999;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+      transition: var(--transition);
+    }
+    .wpp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 28px rgba(37,211,102,0.6);
+    }
+    .wpp-float svg { width: 32px; height: 32px; }
+
+    /* ============================================================
+       HEADER / NAV
+    ============================================================ */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 22px 0;
+      transition: background var(--transition), padding var(--transition), box-shadow var(--transition), border-color var(--transition);
+      border-bottom: 1px solid transparent;
+    }
+    .site-header.scrolled {
+      background: rgba(255,255,255,0.97);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 14px 0;
+      border-bottom-color: var(--border);
+      box-shadow: 0 2px 20px rgba(20,53,28,0.06);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-logo-img {
+      height: 52px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+      object-position: center;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 36px;
+    }
+    .nav-links a {
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--muted);
+      transition: color var(--transition);
+    }
+    .nav-links a:hover { color: var(--dark); }
+
+    .nav-cta {
+      padding: 10px 22px;
+      font-size: 0.875rem;
+    }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+      z-index: 1100;
+      position: relative;
+    }
+    .nav-toggle span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background: var(--dark);
+      border-radius: 2px;
+      transition: transform 0.3s var(--ease), opacity 0.3s var(--ease);
+      transform-origin: center;
+    }
+    .nav-toggle[aria-expanded="true"] span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .nav-toggle[aria-expanded="true"] span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+    .nav-toggle[aria-expanded="true"] span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+    .nav-toggle[aria-expanded="true"] span { background: var(--white); }
+
+    /* Mobile menu overlay */
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: var(--dark);
+      z-index: 1050;
+      flex-direction: column;
+      padding: 100px 32px 48px;
+      transform: translateX(100%);
+      transition: transform 0.35s var(--ease);
+    }
+    .mobile-menu.is-open {
+      transform: translateX(0);
+    }
+    .mobile-menu-nav {
+      display: flex;
+      flex-direction: column;
+    }
+    .mobile-menu-nav a {
+      font-family: var(--font-head);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: rgba(255,255,255,0.6);
+      padding: 20px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+      transition: color var(--transition);
+      display: block;
+    }
+    .mobile-menu-nav a:first-child { border-top: 1px solid rgba(255,255,255,0.07); }
+    .mobile-menu-nav a:hover { color: var(--lime); }
+    .mobile-menu-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-top: 36px;
+      background: var(--lime);
+      color: var(--dark2);
+      padding: 18px 24px;
+      border-radius: var(--radius);
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1rem;
+      transition: var(--transition);
+    }
+    .mobile-menu-cta:hover { background: var(--lime2); color: #fff; }
+    .mobile-menu-cta svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+    /* ============================================================
+       HERO — Editorial Statement
+    ============================================================ */
+    .hero {
+      background: var(--white);
+      min-height: 100vh;
+      min-height: 100svh;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* Subtle dot texture */
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, var(--border) 1px, transparent 1px);
+      background-size: 32px 32px;
+      opacity: 0.35;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Large organic glow — right side */
+    .hero-blob {
+      position: absolute;
+      top: -120px;
+      right: -200px;
+      width: 680px;
+      height: 680px;
+      border-radius: 50%;
+      background: radial-gradient(circle at center, var(--mint) 0%, var(--soft2) 40%, transparent 68%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Decorative ring — lower left */
+    .hero-ring {
+      position: absolute;
+      bottom: 12%;
+      left: -60px;
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.5;
+    }
+    .hero-ring::after {
+      content: '';
+      position: absolute;
+      inset: 30px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      opacity: 0.5;
+    }
+
+    .hero-container {
+      position: relative;
+      z-index: 2;
+      padding-top: 120px;
+      padding-bottom: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Top bar */
+    .hero-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 56px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--mint);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 5px 14px 5px 9px;
+    }
+    .hero-tag-dot {
+      width: 6px;
+      height: 6px;
+      background: var(--lime2);
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .hero-tag span {
+      font-family: var(--font-head);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--dark);
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+
+    .hero-tagline {
+      font-size: 0.8rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      letter-spacing: 0.02em;
+    }
+    .hero-tagline::before {
+      content: '';
+      display: inline-block;
+      width: 28px;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* Main body: headline left + right visual column */
+    .hero-body {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 64px;
+      align-items: flex-end;
+      margin-bottom: 64px;
+    }
+
+    /* Headline — confident, not screaming */
+    .hero-headline {
+      font-family: var(--font-head);
+      font-size: clamp(2.4rem, 4.2vw, 4.2rem);
+      font-weight: 700;
+      line-height: 1.12;
+      color: var(--dark);
+      letter-spacing: -0.02em;
+      margin-bottom: 28px;
+    }
+
+    /* Inline accent — just the color, no block */
+    .hero-headline em {
+      font-style: normal;
+      color: var(--lime2);
+      font-weight: 800;
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      color: var(--muted);
+      line-height: 1.75;
+      max-width: 500px;
+      margin-bottom: 32px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .hero-cta-note {
+      font-size: 0.74rem;
+      color: var(--muted);
+      opacity: 0.65;
+      margin-top: 10px;
+    }
+
+    /* Right panel — brand icon */
+    .hero-aside {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      gap: 16px;
+    }
+
+    .hero-aside-icon-wrap {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-aside-icon-wrap img {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+      display: block;
+      mix-blend-mode: multiply;
+    }
+
+    .hero-aside-tagpair {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .hero-aside-tag {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.3;
+    }
+    .hero-aside-tag-bar {
+      width: 3px;
+      height: 26px;
+      background: var(--lime);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .hero-aside-tag strong {
+      display: block;
+      font-family: var(--font-head);
+      font-size: 0.76rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 1px;
+    }
+
+
+    /* ============================================================
+       TRUST BAR
+    ============================================================ */
+    .trust-bar {
+      background: var(--white);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0;
+    }
+    .trust-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .trust-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--mint);
+      border: 1px solid var(--border);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .trust-icon svg { width: 17px; height: 17px; color: var(--lime2); fill: none; stroke: var(--lime2); }
+    .trust-text {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--dark);
+      line-height: 1.35;
+    }
+    .trust-divider {
+      width: 1px;
+      height: 28px;
+      background: var(--border);
+    }
+
+    /* ============================================================
+       MANIFESTO / STATEMENT
+    ============================================================ */
+    .manifesto {
+      background: var(--white);
+      padding: 108px 0;
+      overflow: hidden;
+      position: relative;
+    }
+    /* Subtle organic arc at bottom */
+    .manifesto::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 50px;
+      background: var(--cream);
+      clip-path: ellipse(55% 100% at 50% 100%);
+    }
+    .manifesto-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .manifesto-text h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.9rem, 3.2vw, 2.8rem);
+      font-weight: 700;
+      line-height: 1.18;
+      color: var(--dark);
+      letter-spacing: -0.015em;
+      margin-bottom: 20px;
+    }
+    .manifesto-text h2 em {
+      font-style: normal;
+      color: var(--lime2);
+    }
+    .manifesto-text p {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.75;
+      margin-bottom: 20px;
+    }
+    .manifesto-text p:last-of-type { margin-bottom: 36px; }
+
+    .manifesto-visual {
+      position: relative;
+    }
+    .manifesto-big-number {
+      font-family: var(--font-head);
+      font-size: clamp(6rem, 12vw, 10rem);
+      font-weight: 800;
+      color: var(--soft2);
+      line-height: 1;
+      user-select: none;
+      letter-spacing: -0.03em;
+    }
+    .manifesto-big-label {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      padding: 28px 36px;
+      background: var(--dark);
+      color: var(--white);
+      border-radius: var(--radius-lg);
+      font-family: var(--font-head);
+      box-shadow: var(--shadow-lg);
+    }
+    .manifesto-big-label .accent { font-size: 2.5rem; font-weight: 800; color: var(--lime); }
+    .manifesto-big-label .desc { font-size: 0.85rem; color: rgba(255,255,255,0.55); margin-top: 6px; line-height: 1.5; }
+
+    /* ============================================================
+       SERVICES
+    ============================================================ */
+    .services {
+      background: var(--cream);
+      padding: 100px 0;
+      position: relative;
+    }
+
+    /* Organic top separator */
+    .services::before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: 0;
+      right: 0;
+      height: 60px;
+      background: var(--white);
+      clip-path: ellipse(60% 100% at 50% 0%);
+    }
+
+    .services-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 56px;
+      gap: 32px;
+    }
+    .services-header h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+      font-weight: 700;
+      color: var(--dark);
+      max-width: 480px;
+      line-height: 1.18;
+      letter-spacing: -0.015em;
+    }
+    .services-header p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      max-width: 300px;
+      line-height: 1.65;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+
+    .service-tile {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px 32px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+      cursor: default;
+    }
+    .service-tile::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 3px;
+      height: 0;
+      background: var(--lime);
+      border-radius: 0 0 3px 0;
+      transition: height 0.4s var(--ease);
+    }
+    .service-tile:hover {
+      border-color: var(--soft);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+    .service-tile:hover::after { height: 100%; }
+
+    .service-number {
+      font-family: var(--font-head);
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: 0.12em;
+      margin-bottom: 18px;
+    }
+    .service-icon {
+      width: 44px;
+      height: 44px;
+      margin-bottom: 18px;
+      background: var(--mint);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border);
+      transition: var(--transition);
+    }
+    .service-tile:hover .service-icon {
+      background: var(--dark);
+      border-color: var(--dark);
+    }
+    .service-icon svg {
+      width: 22px;
+      height: 22px;
+      transition: var(--transition);
+    }
+    .service-icon svg {
+      color: var(--lime2);
+      stroke: var(--lime2);
+    }
+    .service-tile:hover .service-icon svg {
+      color: var(--lime);
+      stroke: var(--lime);
+    }
+    .service-tile h3 {
+      font-family: var(--font-head);
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--dark);
+      letter-spacing: -0.01em;
+      margin-bottom: 8px;
+    }
+    .service-tile p {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    /* ============================================================
+       SEGMENTS
+    ============================================================ */
+    .segments {
+      padding: 100px 0;
+      background: var(--white);
+    }
+    .segments-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .segments-header h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+      font-weight: 700;
+      color: var(--dark);
+      letter-spacing: -0.015em;
+      margin-top: 12px;
+    }
+    .segments-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+    .segment-card {
+      background: var(--gray);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px 24px;
+      transition: var(--transition);
+      text-align: center;
+    }
+    .segment-card:hover {
+      background: var(--white);
+      border-color: var(--soft);
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+    .segment-icon-wrap {
+      width: 56px;
+      height: 56px;
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 18px;
+      transition: var(--transition);
+    }
+    .segment-card:hover .segment-icon-wrap {
+      background: var(--dark);
+      border-color: var(--dark);
+    }
+    .segment-icon-wrap svg {
+      width: 24px;
+      height: 24px;
+      color: var(--dark);
+      transition: var(--transition);
+      stroke: var(--dark);
+      fill: none;
+    }
+    .segment-card:hover .segment-icon-wrap svg {
+      color: var(--lime);
+      stroke: var(--lime);
+    }
+    .segment-card h3 {
+      font-family: var(--font-head);
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--dark);
+      letter-spacing: -0.01em;
+      margin-bottom: 6px;
+    }
+    .segment-card p {
+      font-size: 0.82rem;
+      color: var(--muted);
+      line-height: 1.58;
+    }
+
+    /* ============================================================
+       PRODUCTS
+    ============================================================ */
+    .products {
+      padding: 100px 0;
+      background: var(--cream);
+    }
+    .products-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .products-header h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+      font-weight: 700;
+      color: var(--dark);
+      letter-spacing: -0.015em;
+      margin-top: 12px;
+    }
+    .products-header p {
+      color: var(--muted);
+      max-width: 520px;
+      margin: 16px auto 0;
+      font-size: 0.95rem;
+    }
+    .products-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .product-card {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      position: relative;
+      min-height: 320px;
+      display: flex;
+      align-items: flex-end;
+    }
+    .product-card-bg {
+      position: absolute;
+      inset: 0;
+      transition: transform 0.5s var(--ease);
+    }
+    .product-card:hover .product-card-bg { transform: scale(1.04); }
+    .product-card.terpenoil .product-card-bg {
+      background: linear-gradient(150deg, #1e5228 0%, #2d7a3a 50%, #3a9148 100%);
+    }
+    .product-card.enzilimp .product-card-bg {
+      background: linear-gradient(150deg, #0d2413 0%, #183220 50%, #14351C 100%);
+    }
+    .product-card.softys .product-card-bg {
+      background: linear-gradient(150deg, #294f36 0%, #3d7248 50%, #4a8a58 100%);
+    }
+    .product-card.spartan .product-card-bg {
+      background: linear-gradient(150deg, #1b3d24 0%, #2a5c38 50%, #366a44 100%);
+    }
+
+    .product-card-deco {
+      position: absolute;
+      inset: 0;
+      background-image:
+        radial-gradient(circle at 80% 20%, rgba(134,194,64,0.15) 0%, transparent 50%);
+    }
+
+    .product-card-content {
+      position: relative;
+      z-index: 2;
+      padding: 36px;
+      width: 100%;
+    }
+    .product-tag {
+      display: inline-block;
+      background: var(--lime);
+      color: var(--dark2);
+      font-family: var(--font-head);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 2px;
+      margin-bottom: 16px;
+    }
+    .product-card h3 {
+      font-family: var(--font-head);
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: var(--white);
+      letter-spacing: -0.01em;
+      margin-bottom: 10px;
+    }
+    .product-card p {
+      font-size: 0.875rem;
+      color: rgba(255,255,255,0.65);
+      line-height: 1.6;
+      max-width: 320px;
+    }
+    .product-card-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      font-family: var(--font-head);
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: var(--lime);
+      letter-spacing: 0.05em;
+      transition: gap var(--transition);
+    }
+    .product-card:hover .product-card-link { gap: 14px; }
+
+    /* ============================================================
+       DIFFERENTIALS
+    ============================================================ */
+    .differentials {
+      padding: 100px 0;
+      background: var(--white);
+    }
+    .diff-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+    .diff-left h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 16px;
+      line-height: 1.2;
+      letter-spacing: -0.015em;
+    }
+    .diff-left p {
+      color: var(--muted);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 36px;
+    }
+    .diff-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .diff-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+    .diff-check {
+      width: 24px;
+      height: 24px;
+      background: var(--lime);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+    .diff-check svg { width: 12px; height: 12px; }
+    .diff-item-text strong {
+      display: block;
+      font-family: var(--font-head);
+      font-weight: 700;
+      color: var(--dark);
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+    }
+    .diff-item-text span {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+
+    .diff-right {
+      position: relative;
+    }
+    .diff-values-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .diff-value-card {
+      background: var(--gray);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 28px 24px;
+      transition: var(--transition);
+    }
+    .diff-value-card:hover {
+      background: var(--white);
+      border-color: var(--soft);
+      box-shadow: var(--shadow-md);
+      transform: translateY(-3px);
+    }
+    .diff-value-card .icon {
+      width: 44px;
+      height: 44px;
+      background: var(--soft2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+      transition: var(--transition);
+    }
+    .diff-value-card:hover .icon {
+      background: var(--dark);
+      border-color: var(--dark);
+    }
+    .diff-value-card .icon svg {
+      width: 22px;
+      height: 22px;
+      transition: var(--transition);
+      color: var(--lime2);
+      stroke: var(--lime2);
+    }
+    .diff-value-card:hover .icon svg {
+      color: var(--lime);
+      stroke: var(--lime);
+    }
+    .diff-value-card h4 {
+      font-family: var(--font-head);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--dark);
+      letter-spacing: -0.01em;
+      margin-bottom: 5px;
+    }
+    .diff-value-card p {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    /* ============================================================
+       TESTIMONIALS
+    ============================================================ */
+    .testimonials {
+      background: var(--cream);
+      border-top: 1px solid var(--border);
+      padding: 100px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .testimonials::before {
+      content: '';
+      position: absolute;
+      top: -150px;
+      right: -100px;
+      width: 500px;
+      height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(134,194,64,0.12) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .testimonials-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-bottom: 56px;
+      gap: 32px;
+    }
+    .testimonials-header h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+      font-weight: 700;
+      color: var(--dark);
+      line-height: 1.18;
+      letter-spacing: -0.015em;
+    }
+    .testimonials-header p {
+      font-size: 0.9rem;
+      color: rgba(20,53,28,0.5);
+      max-width: 260px;
+      line-height: 1.6;
+      text-align: right;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 16px;
+      align-items: start;
+    }
+
+    .testimonial-card {
+      background: #ffffff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px 32px;
+      transition: var(--transition);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .testimonial-card:hover {
+      border-color: rgba(134,194,64,0.4);
+      box-shadow: 0 4px 24px rgba(134,194,64,0.1);
+    }
+
+    /* Depoimento em destaque — maior */
+    .testimonial-card.featured {
+      background: var(--dark);
+      border-color: var(--dark);
+      padding: 44px 40px;
+    }
+    .testimonial-card.featured:hover {
+      border-color: var(--dark);
+      box-shadow: 0 8px 40px rgba(20,53,28,0.2);
+    }
+
+    .testimonial-quote-mark {
+      font-family: Georgia, serif;
+      font-size: 4rem;
+      line-height: 0.7;
+      color: var(--lime2);
+      opacity: 0.6;
+      user-select: none;
+      font-weight: 700;
+    }
+    .testimonial-card.featured .testimonial-quote-mark {
+      font-size: 5rem;
+      color: var(--lime);
+      opacity: 0.7;
+    }
+
+    .testimonial-text {
+      font-size: 0.92rem;
+      color: rgba(20,53,28,0.7);
+      line-height: 1.72;
+      flex: 1;
+    }
+    .testimonial-card.featured .testimonial-text {
+      font-size: 1.02rem;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .testimonial-stars {
+      display: flex;
+      gap: 3px;
+    }
+    .testimonial-star {
+      width: 14px;
+      height: 14px;
+      color: var(--lime2);
+    }
+    .testimonial-card.featured .testimonial-star {
+      color: var(--lime);
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-top: 16px;
+      border-top: 1px solid var(--border);
+    }
+    .testimonial-card.featured .testimonial-author {
+      border-top-color: rgba(255,255,255,0.1);
+    }
+    .testimonial-avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: var(--mint);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-head);
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--lime2);
+      flex-shrink: 0;
+    }
+    .testimonial-card.featured .testimonial-avatar {
+      width: 48px;
+      height: 48px;
+      font-size: 0.9rem;
+      background: rgba(134,194,64,0.15);
+      border-color: rgba(134,194,64,0.25);
+      color: var(--lime);
+    }
+    .testimonial-author-name {
+      font-family: var(--font-head);
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 2px;
+    }
+    .testimonial-card.featured .testimonial-author-name {
+      color: var(--white);
+    }
+    .testimonial-author-role {
+      font-size: 0.76rem;
+      color: rgba(20,53,28,0.45);
+      line-height: 1.3;
+    }
+    .testimonial-card.featured .testimonial-author-role {
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* ============================================================
+       CTA SECTION
+    ============================================================ */
+    .cta-section {
+      background: var(--dark);
+      padding: 96px 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* Organic light patches — natureza emergindo */
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      left: -80px;
+      width: 560px;
+      height: 560px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(134,194,64,0.14) 0%, transparent 65%);
+      pointer-events: none;
+    }
+    .cta-section::after {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      right: -60px;
+      width: 400px;
+      height: 400px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(134,194,64,0.09) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    /* Dot texture overlay */
+    .cta-section .cta-texture {
+      position: absolute;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 24px 24px;
+      pointer-events: none;
+    }
+
+    .cta-inner {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 60px;
+      align-items: center;
+    }
+    .cta-text .section-label {
+      margin-bottom: 16px;
+      color: var(--lime);
+    }
+    .cta-text h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.9rem, 3vw, 2.6rem);
+      font-weight: 700;
+      color: var(--white);
+      line-height: 1.18;
+      margin-bottom: 20px;
+      letter-spacing: -0.015em;
+    }
+    .cta-text h2 em {
+      font-style: normal;
+      color: var(--lime);
+    }
+    .cta-text p {
+      color: rgba(255,255,255,0.5);
+      font-size: 0.95rem;
+      line-height: 1.72;
+      max-width: 460px;
+    }
+    .cta-action {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    /* CTA card wrapper */
+    .cta-card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: var(--radius-xl);
+      padding: 36px 32px;
+      text-align: center;
+      min-width: 280px;
+      backdrop-filter: blur(8px);
+    }
+    .cta-card-label {
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.45);
+      font-weight: 500;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    .cta-wpp-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      background: #25D366;
+      color: var(--white);
+      padding: 18px 32px;
+      border-radius: var(--radius);
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1rem;
+      transition: var(--transition);
+      white-space: nowrap;
+      width: 100%;
+    }
+    .cta-wpp-btn:hover {
+      background: #20bb59;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(37,211,102,0.4);
+    }
+    .cta-wpp-btn svg { width: 24px; height: 24px; flex-shrink: 0; }
+    .cta-note {
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.3);
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    /* ============================================================
+       CONTACT / LOCATION
+    ============================================================ */
+    .contact-strip {
+      background: #ffffff;
+      border-top: 1px solid var(--border);
+      padding: 96px 0;
+    }
+
+    .contact-header {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+    .contact-header h2 {
+      font-family: var(--font-head);
+      font-size: clamp(1.7rem, 2.8vw, 2.4rem);
+      font-weight: 700;
+      color: var(--dark);
+      letter-spacing: -0.015em;
+      line-height: 1.18;
+      margin-top: 8px;
+      margin-bottom: 12px;
+    }
+    .contact-header p {
+      font-size: 0.95rem;
+      color: var(--muted);
+      max-width: 480px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: start;
+    }
+
+    /* Coluna esquerda — localização */
+    .contact-location-label {
+      font-family: var(--font-head);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 20px;
+    }
+
+    .contact-address-card {
+      background: var(--cream);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .contact-address-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--mint);
+      border: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--lime2);
+    }
+    .contact-address-icon svg { width: 18px; height: 18px; }
+    .contact-address-name {
+      font-family: var(--font-head);
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 4px;
+    }
+    .contact-address-lines {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+    .contact-map-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--lime2);
+      margin-top: 10px;
+      transition: color var(--transition);
+    }
+    .contact-map-link:hover { color: var(--dark); }
+    .contact-map-link svg { width: 14px; height: 14px; }
+
+    .contact-map-embed {
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      border: 1px solid var(--border);
+      height: 220px;
+    }
+    .contact-map-embed iframe {
+      width: 100%;
+      height: 100%;
+      display: block;
+      border: none;
+    }
+
+    /* Coluna direita — ações */
+    .contact-actions-label {
+      font-family: var(--font-head);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--dark);
+      margin-bottom: 20px;
+    }
+
+    .contact-btn-wpp {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      background: #25D366;
+      color: #fff;
+      padding: 18px 24px;
+      border-radius: var(--radius);
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 12px;
+      transition: var(--transition);
+    }
+    .contact-btn-wpp:hover {
+      background: #20bb59;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(37,211,102,0.35);
+    }
+    .contact-btn-wpp svg { width: 22px; height: 22px; flex-shrink: 0; }
+
+    .contact-btn-ig {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      width: 100%;
+      background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+      color: #fff;
+      padding: 18px 24px;
+      border-radius: var(--radius);
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 24px;
+      transition: var(--transition);
+    }
+    .contact-btn-ig:hover {
+      opacity: 0.9;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 28px rgba(131,58,180,0.3);
+    }
+    .contact-btn-ig svg { width: 22px; height: 22px; flex-shrink: 0; }
+
+    .contact-cta-card {
+      background: var(--dark);
+      border-radius: var(--radius-lg);
+      padding: 32px 28px;
+      text-align: center;
+    }
+    .contact-cta-card h3 {
+      font-family: var(--font-head);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 10px;
+    }
+    .contact-cta-card p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+    .contact-cta-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--lime);
+      color: var(--dark2);
+      padding: 14px 28px;
+      border-radius: var(--radius);
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 0.9rem;
+      transition: var(--transition);
+      width: 100%;
+    }
+    .contact-cta-btn:hover {
+      background: var(--lime2);
+      color: #fff;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(134,194,64,0.35);
+    }
+    .contact-cta-btn svg { width: 20px; height: 20px; flex-shrink: 0; }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    .footer {
+      background: #ffffff;
+      border-top: 1px solid var(--border);
+      padding: 40px 0;
+    }
+    .footer-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .footer-brand {
+      display: flex;
+      align-items: center;
+    }
+
+    .footer-logo-img {
+      height: 36px;
+      width: auto;
+      display: block;
+      object-fit: contain;
+    }
+    .footer-copy {
+      font-size: 0.8rem;
+      color: rgba(20,53,28,0.4);
+    }
+    .footer-links {
+      display: flex;
+      gap: 24px;
+    }
+    .footer-links a {
+      font-size: 0.8rem;
+      color: rgba(20,53,28,0.5);
+      transition: color var(--transition);
+    }
+    .footer-links a:hover { color: var(--lime2); }
+
+    .footer-simpli {
+      display: flex;
+      align-items: center;
+      opacity: 0.45;
+      transition: opacity var(--transition);
+    }
+    .footer-simpli:hover { opacity: 1; }
+    .footer-simpli-icon {
+      height: 28px;
+      width: auto;
+      display: block;
+    }
+
+    /* ============================================================
+       RESPONSIVE
+    ============================================================ */
+    @media (max-width: 1024px) {
+      .hero-body { grid-template-columns: 1fr; gap: 40px; }
+      .hero-aside { flex-direction: row; align-items: center; }
+      .manifesto-inner { grid-template-columns: 1fr; gap: 40px; }
+      .manifesto-big-number { font-size: 7rem; }
+      .services::before { display: none; }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .segments-grid { grid-template-columns: 1fr 1fr; }
+      .diff-inner { grid-template-columns: 1fr; gap: 48px; }
+      .testimonials-grid { grid-template-columns: 1fr 1fr; }
+      .cta-inner { grid-template-columns: 1fr; }
+      .cta-action { align-items: flex-start; }
+      .cta-card { min-width: auto; }
+    }
+
+    @media (max-width: 768px) {
+      /* Nav */
+      .nav-links, .nav-cta { display: none; }
+      .nav-toggle { display: flex; }
+      .mobile-menu { display: flex; }
+      .nav-logo-img { height: 42px; }
+
+      /* Hero */
+      .hero-container { padding-top: 88px; padding-bottom: 56px; }
+      .hero-topbar { margin-bottom: 24px; }
+      .hero-tagline { display: none; }
+      .hero-aside { display: none; }
+      .hero-actions { flex-direction: column; align-items: stretch; }
+      .hero-actions .btn { justify-content: center; width: 100%; }
+
+      /* Section paddings */
+      .trust-bar { padding: 20px 0; }
+      .manifesto { padding: 72px 0; }
+      .services { padding: 72px 0; }
+      .segments { padding: 72px 0; }
+      .products { padding: 72px 0; }
+      .differentials { padding: 72px 0; }
+      .testimonials { padding: 72px 0; }
+      .cta-section { padding: 72px 0; }
+      .contact-strip { padding: 72px 0; }
+
+      /* Trust bar — scroll horizontal */
+      .trust-inner { flex-wrap: nowrap; overflow-x: auto; gap: 20px; padding-bottom: 4px; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+      .trust-inner::-webkit-scrollbar { display: none; }
+      .trust-item { flex-shrink: 0; }
+      .trust-divider { display: none; }
+
+      /* Manifesto — desmonta visual absoluto */
+      .manifesto-big-number { font-size: 4.5rem; line-height: 1; }
+      .manifesto-big-label { position: static; transform: none; margin-top: 20px; display: inline-block; }
+
+      /* Services */
+      .services-header { flex-direction: column; align-items: flex-start; gap: 12px; }
+      .services-header p { max-width: 100%; }
+      .services-grid { grid-template-columns: 1fr; gap: 12px; }
+      .service-tile { padding: 28px 24px; }
+
+      /* Segments */
+      .segments-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+      .segment-card { padding: 24px 16px; }
+
+      /* Products */
+      .products-grid { grid-template-columns: 1fr; gap: 16px; }
+      .product-card { min-height: 260px; }
+
+      /* Differentials */
+      .diff-values-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+
+      /* Testimonials */
+      .testimonials-grid { grid-template-columns: 1fr; }
+      .testimonials-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .testimonials-header p { text-align: left; max-width: 100%; }
+      .testimonial-card { padding: 28px 24px; }
+      .testimonial-card.featured { padding: 32px 28px; }
+
+      /* CTA */
+      .cta-inner { gap: 36px; }
+
+      /* Contact */
+      .contact-header { margin-bottom: 40px; }
+      .contact-grid { grid-template-columns: 1fr; gap: 32px; }
+      .contact-map-embed { height: 200px; }
+
+      /* Footer */
+      .footer-inner { flex-direction: column; align-items: flex-start; gap: 20px; }
+
+      /* WhatsApp float */
+      .wpp-float { bottom: 20px; right: 20px; width: 54px; height: 54px; }
+      .wpp-float svg { width: 28px; height: 28px; }
+    }
+
+    @media (max-width: 480px) {
+      .segments-grid { grid-template-columns: 1fr; }
+      .diff-values-grid { grid-template-columns: 1fr; }
+      .contact-header h2 { font-size: 1.6rem; }
+    }
+
+    /* ============================================================
+       ANIMATIONS
+    ============================================================ */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .animate-in { animation: fadeUp 0.7s var(--ease) both; }
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    .delay-4 { animation-delay: 0.4s; }
+  </style>
+</head>
+
+<body>
+
+  <!-- ============================================================
+       WHATSAPP FLOAT
+  ============================================================ -->
+  <a
+    href="https://wa.me/5581933009302?text=Olá!%20Vim%20pelo%20site%20da%20Nordeste%20Ambiental%20e%20gostaria%20de%20solicitar%20um%20orçamento."
+    class="wpp-float"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Fale conosco pelo WhatsApp"
+  >
+    <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.556 4.116 1.528 5.847L0 24l6.335-1.506A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.372l-.36-.213-3.76.894.952-3.657-.235-.376A9.818 9.818 0 012.182 12c0-5.419 4.399-9.818 9.818-9.818 5.42 0 9.818 4.399 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/>
+    </svg>
+  </a>
+
+  <!-- ============================================================
+       HEADER
+  ============================================================ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container">
+      <nav class="nav-inner" aria-label="Menu principal">
+        <a href="/" class="nav-logo" aria-label="Nordeste Ambiental - Página inicial">
+          <img src="logo_vertical_neambiental.png" alt="Nordeste Ambiental" class="nav-logo-img" />
+        </a>
+
+        <ul class="nav-links" role="list">
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#segmentos">Segmentos</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+        </ul>
+
+        <a
+          href="https://wa.me/5581933009302?text=Olá!%20Vim%20pelo%20site%20da%20Nordeste%20Ambiental%20e%20gostaria%20de%20solicitar%20um%20orçamento."
+          class="btn btn-primary nav-cta"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Solicitar Orçamento
+        </a>
+
+        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false" id="navToggle">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Menu de navegação">
+    <nav class="mobile-menu-nav">
+      <a href="#servicos">Serviços</a>
+      <a href="#segmentos">Segmentos</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#diferenciais">Diferenciais</a>
+    </nav>
+    <a
+      href="https://wa.me/5581933009302?text=Olá!%20Vim%20pelo%20site%20da%20Nordeste%20Ambiental%20e%20gostaria%20de%20solicitar%20um%20orçamento."
+      class="mobile-menu-cta"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/>
+        <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.556 4.116 1.528 5.847L0 24l6.335-1.506A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.372l-.36-.213-3.76.894.952-3.657-.235-.376A9.818 9.818 0 012.182 12c0-5.419 4.399-9.818 9.818-9.818 5.42 0 9.818 4.399 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/>
+      </svg>
+      Solicitar Orçamento
+    </a>
+  </div>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" aria-labelledby="hero-headline">
+    <div class="hero-blob" aria-hidden="true"></div>
+    <div class="hero-ring" aria-hidden="true"></div>
+
+    <div class="container hero-container">
+
+      <!-- Top bar: location + tagline -->
+      <div class="hero-topbar">
+        <div class="hero-tag animate-in">
+          <div class="hero-tag-dot"></div>
+          <span>Recife, Pernambuco</span>
+        </div>
+        <span class="hero-tagline animate-in delay-1">Biotecnologia aplicada ao cotidiano empresarial</span>
+      </div>
+
+      <!-- Headline + aside -->
+      <div class="hero-body">
+        <div>
+          <h1 class="hero-headline animate-in delay-1" id="hero-headline">
+            Higiene e limpeza<br>
+            <em>100% natural</em><br>
+            para sua empresa.
+          </h1>
+
+          <p class="hero-sub animate-in delay-2">
+            Soluções biotecnológicas sem toxinas para hospitais, indústrias alimentícias, escolas e mais. Atendemos Recife e todo o Nordeste com suporte técnico dedicado.
+          </p>
+
+          <div class="hero-actions animate-in delay-3">
+            <a
+              href="https://wa.me/5581933009302?text=Olá!%20Gostaria%20de%20um%20orçamento%20personalizado%20para%20minha%20empresa."
+              class="btn btn-primary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z"/>
+              </svg>
+              Solicitar Orçamento
+            </a>
+            <a href="#servicos" class="btn btn-outline">Conhecer Serviços</a>
+          </div>
+          <p class="hero-cta-note animate-in delay-3">Sem formulários. Resposta em até 1 hora em dias úteis.</p>
+        </div>
+
+        <!-- Right: brand icon + key tags -->
+        <div class="hero-aside animate-in delay-2" aria-hidden="true">
+          <div class="hero-aside-icon-wrap">
+            <img src="ico_neambiental.png" alt="Nordeste Ambiental" />
+          </div>
+          <div class="hero-aside-tagpair">
+            <div class="hero-aside-tag">
+              <div class="hero-aside-tag-bar"></div>
+              <div>
+                <strong>Biotecnologia</strong>
+                Produtos 100% naturais
+              </div>
+            </div>
+            <div class="hero-aside-tag">
+              <div class="hero-aside-tag-bar"></div>
+              <div>
+                <strong>Nordeste</strong>
+                Recife e região
+              </div>
+            </div>
+            <div class="hero-aside-tag">
+              <div class="hero-aside-tag-bar"></div>
+              <div>
+                <strong>Sustentável</strong>
+                Zero químicos agressivos
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TRUST BAR
+  ============================================================ -->
+  <section class="trust-bar" aria-label="Diferenciais rápidos">
+    <div class="container">
+      <div class="trust-inner">
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 2L4 6v6c0 5.25 3.5 10.15 8 11.5C16.5 22.15 20 17.25 20 12V6l-8-4z" stroke="currentColor" stroke-width="2" fill="none"/>
+              <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <div class="trust-text">Biotecnologia<br>certificada</div>
+        </div>
+
+        <div class="trust-divider" aria-hidden="true"></div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+              <path d="M8 12l2.5 2.5L16 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="trust-text">Seguro para crianças<br>e animais</div>
+        </div>
+
+        <div class="trust-divider" aria-hidden="true"></div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" stroke-width="2"/>
+              <circle cx="12" cy="9" r="2.5" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <div class="trust-text">Atendemos Recife<br>e todo o Nordeste</div>
+        </div>
+
+        <div class="trust-divider" aria-hidden="true"></div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="trust-text">Reducão real<br>de custos operacionais</div>
+        </div>
+
+        <div class="trust-divider" aria-hidden="true"></div>
+
+        <div class="trust-item">
+          <div class="trust-icon">
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="2"/>
+              <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="trust-text">Consultoria e<br>treinamento incluso</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MANIFESTO
+  ============================================================ -->
+  <section class="manifesto" aria-labelledby="manifesto-heading">
+    <div class="container">
+      <div class="manifesto-inner">
+        <div class="manifesto-text">
+          <span class="section-label">Nossa Missão</span>
+          <h2 id="manifesto-heading">
+            A natureza tem a<br>
+            solução que sua<br>
+            empresa <em>precisa</em>
+          </h2>
+          <p>
+            Há anos no Nordeste, desenvolvemos soluções que unem eficiência e responsabilidade ambiental. Nossas formulações são baseadas em microrganismos e compostos vegetais que limpam, higienizam e remediam sem agredir a saúde das pessoas ou o meio ambiente.
+          </p>
+          <p>
+            Atuamos junto a NGOs, órgãos governamentais e empresas privadas na recuperação ambiental e na promoção de uma cultura de higiene mais consciente e sustentável.
+          </p>
+          <a
+            href="https://wa.me/5581933009302?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20as%20soluções%20da%20Nordeste%20Ambiental."
+            class="btn btn-dark"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Saiba como funciona
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="manifesto-visual" aria-hidden="true">
+          <div class="manifesto-big-number">Bio</div>
+          <div class="manifesto-big-label">
+            <div class="accent">100%</div>
+            <div class="desc">Natural e sem<br>química agressiva</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SERVICES
+  ============================================================ -->
+  <section class="services" id="servicos" aria-labelledby="services-heading">
+    <div class="container">
+      <div class="services-header">
+        <div>
+          <span class="section-label">O que oferecemos</span>
+          <h2 id="services-heading">Servicos que transformam<br>sua operação</h2>
+        </div>
+        <p>
+          Do diagnóstico ao pós-venda, oferecemos suporte completo para higienização e biorremediação com tecnologia de ponta.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <article class="service-tile">
+          <div class="service-number">01</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+              <path d="M24 12c-4 0-8 3-8 9s4 9 8 9 8-3 8-9-4-9-8-9z" fill="#86C240" opacity="0.8"/>
+              <path d="M16 33c0 0 4-3 8-3s8 3 8 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Biorremediação</h3>
+          <p>Uso de microrganismos naturais para degradação de resíduos orgânicos e recuperação de ambientes contaminados, com eficácia comprovada.</p>
+        </article>
+
+        <article class="service-tile">
+          <div class="service-number">02</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2" opacity="0.3"/>
+              <path d="M16 24h16M24 16v16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Higiene Sustentável</h3>
+          <p>Programas completos de limpeza e higienização com produtos vegetais. Redução de custos operacionais sem abrir mão da eficácia.</p>
+        </article>
+
+        <article class="service-tile">
+          <div class="service-number">03</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 36V20l12-8 12 8v16" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+              <path d="M20 36v-8h8v8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Consultoria Ambiental</h3>
+          <p>Diagnóstico da sua operação, identificação de pontos críticos e desenvolvimento de um plano de higiene alinhado à legislação ambiental.</p>
+        </article>
+
+        <article class="service-tile">
+          <div class="service-number">04</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="20" r="8" stroke="currentColor" stroke-width="2"/>
+              <path d="M12 38c0-6 5.4-10 12-10s12 4 12 10" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.5"/>
+            </svg>
+          </div>
+          <h3>Treinamentos e Cursos</h3>
+          <p>Capacitação das equipes de limpeza e manutenção para uso correto dos produtos e boas práticas ambientais no dia a dia da empresa.</p>
+        </article>
+
+        <article class="service-tile">
+          <div class="service-number">05</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M8 28l8-8 8 8 8-12 8 4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="8" y="36" width="32" height="2" rx="1" fill="#86C240" opacity="0.4"/>
+            </svg>
+          </div>
+          <h3>Tratamento de Efluentes</h3>
+          <p>Soluções biotecnológicas para tratamento de águas residuais e efluentes industriais, garantindo conformidade ambiental e redução de odores.</p>
+        </article>
+
+        <article class="service-tile">
+          <div class="service-number">06</div>
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 8L8 20v20h10V28h12v12h10V20L24 8z" stroke="currentColor" stroke-width="2" stroke-linejoin="round" opacity="0.5"/>
+              <circle cx="24" cy="22" r="4" fill="#86C240" opacity="0.8"/>
+            </svg>
+          </div>
+          <h3>Suprimentos Contínuos</h3>
+          <p>Fornecimento regular de produtos com logística controlada e suporte técnico dedicado. Parcerias de longo prazo com condições especiais.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SEGMENTS
+  ============================================================ -->
+  <section class="segments" id="segmentos" aria-labelledby="segments-heading">
+    <div class="container">
+      <div class="segments-header">
+        <span class="section-label">Onde atuamos</span>
+        <h2 id="segments-heading">Solucões para cada segmento</h2>
+      </div>
+
+      <div class="segments-grid">
+        <article class="segment-card">
+          <div class="segment-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+          </div>
+          <h3>Higiene Hospitalar</h3>
+          <p>Desinfecção eficaz sem toxinas agressivas para ambientes de saúde sensíveis.</p>
+        </article>
+
+        <article class="segment-card">
+          <div class="segment-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <rect x="2" y="3" width="20" height="14" rx="2"/>
+              <path d="M8 21h8M12 17v4"/>
+            </svg>
+          </div>
+          <h3>Industria Alimentícia</h3>
+          <p>Limpeza certificada para ambientes de manipulação de alimentos com total segurança.</p>
+        </article>
+
+        <article class="segment-card">
+          <div class="segment-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            </svg>
+          </div>
+          <h3>Instituições de Ensino</h3>
+          <p>Produtos seguros para criancas e professores. Quimica verde no cotidiano escolar.</p>
+        </article>
+
+        <article class="segment-card">
+          <div class="segment-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>
+            </svg>
+          </div>
+          <h3>Clinicas Veterinárias</h3>
+          <p>Higiene eficaz e não tóxica para ambientes com animais, pets e tratamentos clínicos.</p>
+        </article>
+
+        <article class="segment-card">
+          <div class="segment-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <rect x="1" y="3" width="15" height="13" rx="2"/>
+              <path d="M16 8h4l3 3v5h-7V8zM5.5 16a1.5 1.5 0 100 3 1.5 1.5 0 000-3zM18.5 16a1.5 1.5 0 100 3 1.5 1.5 0 000-3z"/>
+            </svg>
+          </div>
+          <h3>Logística e Armazéns</h3>
+          <p>Controle de odores e higienização de pisos e estruturas em grandes operações.</p>
+        </article>
+
+        <article class="segment-card">
+          <div class="segment-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M3 5h4l2.5 12.5L12 5h4l2 7h2"/>
+            </svg>
+          </div>
+          <h3>Condomínios e Hotéis</h3>
+          <p>Programas de higiene sustentável para áreas comuns, piscinas e estruturas coletivas.</p>
+        </article>
+
+        <article class="segment-card">
+          <div class="segment-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M12 2a3 3 0 013 3v7a3 3 0 01-6 0V5a3 3 0 013-3zM19 10v2a7 7 0 01-14 0v-2"/>
+            </svg>
+          </div>
+          <h3>Industria em Geral</h3>
+          <p>Soluções para limpeza industrial pesada com alta performance e baixo impacto ambiental.</p>
+        </article>
+
+        <article class="segment-card">
+          <div class="segment-icon-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+              <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+            </svg>
+          </div>
+          <h3>Setor Público</h3>
+          <p>Parcerias com orgãos municipais e estaduais para higiene urbana e saneamento sustentável.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRODUCTS
+  ============================================================ -->
+  <section class="products" id="produtos" aria-labelledby="products-heading">
+    <div class="container">
+      <div class="products-header">
+        <span class="section-label">Linhas de Produtos</span>
+        <h2 id="products-heading">Marcas desenvolvidas com<br>biotecnologia de ponta</h2>
+        <p>Formulações proprietárias e marcas parceiras criteriosamente selecionadas por qualidade, segurança e alinhamento ambiental.</p>
+      </div>
+
+      <div class="products-grid">
+        <article class="product-card terpenoil">
+          <div class="product-card-bg"></div>
+          <div class="product-card-deco" aria-hidden="true"></div>
+          <div class="product-card-content">
+            <span class="product-tag">Linha própria</span>
+            <h3>Terpenoil</h3>
+            <p>Linha de limpeza e higiene baseada em derivados vegetais de alta performance. Desengordurantes, multiusos e lavanderia em formato líquido e cápsulas.</p>
+            <a
+              href="https://wa.me/5581933009302?text=Olá!%20Tenho%20interesse%20na%20linha%20Terpenoil.%20Pode%20me%20enviar%20mais%20informações?"
+              class="product-card-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Solicitar catálogo
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="product-card enzilimp">
+          <div class="product-card-bg"></div>
+          <div class="product-card-deco" aria-hidden="true"></div>
+          <div class="product-card-content">
+            <span class="product-tag">Linha própria</span>
+            <h3>Enzilimp</h3>
+            <p>Biorremedadores com microrganismos naturais vivos para tratamento de efluentes, controle de odores e saneamento. Versões doméstica, pet e industrial.</p>
+            <a
+              href="https://wa.me/5581933009302?text=Olá!%20Tenho%20interesse%20na%20linha%20Enzilimp.%20Pode%20me%20enviar%20mais%20informações?"
+              class="product-card-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Solicitar catálogo
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="product-card softys">
+          <div class="product-card-bg"></div>
+          <div class="product-card-deco" aria-hidden="true"></div>
+          <div class="product-card-content">
+            <span class="product-tag">Parceiro oficial</span>
+            <h3>Softys</h3>
+            <p>Linha completa de produtos de higiene em papel presentes em 18 países. Toalhas, papel higienico e dispensers para ambientes corporativos e hospitalares.</p>
+            <a
+              href="https://wa.me/5581933009302?text=Olá!%20Tenho%20interesse%20nos%20produtos%20Softys.%20Pode%20me%20enviar%20mais%20informações?"
+              class="product-card-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Solicitar catálogo
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="product-card spartan">
+          <div class="product-card-bg"></div>
+          <div class="product-card-deco" aria-hidden="true"></div>
+          <div class="product-card-content">
+            <span class="product-tag">Parceiro oficial</span>
+            <h3>Spartan Brasil</h3>
+            <p>Produtos ecológicos certificados pela ABNT com formulações de alto desempenho para higiene profissional. Aprovado para uso em licitações públicas.</p>
+            <a
+              href="https://wa.me/5581933009302?text=Olá!%20Tenho%20interesse%20nos%20produtos%20Spartan.%20Pode%20me%20enviar%20mais%20informações?"
+              class="product-card-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Solicitar catálogo
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       DIFFERENTIALS
+  ============================================================ -->
+  <section class="differentials" id="diferenciais" aria-labelledby="diff-heading">
+    <div class="container">
+      <div class="diff-inner">
+        <div class="diff-left">
+          <span class="section-label">Por que a Nordeste Ambiental</span>
+          <h2 id="diff-heading">Tecnologia natural com resultados reais</h2>
+          <p>
+            Nao e greenwashing. Nossas solucões substituem produtos quimicos agressivos sem perder eficácia. Comprovado na prática por clientes em todo o Nordeste.
+          </p>
+          <ul class="diff-list" role="list">
+            <li class="diff-item">
+              <div class="diff-check" aria-hidden="true">
+                <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 6l3 3 5-5" stroke="#14351C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="diff-item-text">
+                <strong>Formulações 100% naturais</strong>
+                <span>Sem compostos tóxicos, sem impacto à saúde dos colaboradores e usuários.</span>
+              </div>
+            </li>
+            <li class="diff-item">
+              <div class="diff-check" aria-hidden="true">
+                <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 6l3 3 5-5" stroke="#14351C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="diff-item-text">
+                <strong>Reducão de custos operacionais</strong>
+                <span>Maior concentração e menor consumo reduzem o gasto mensal com insumos de limpeza.</span>
+              </div>
+            </li>
+            <li class="diff-item">
+              <div class="diff-check" aria-hidden="true">
+                <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 6l3 3 5-5" stroke="#14351C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="diff-item-text">
+                <strong>Suporte técnico especializado</strong>
+                <span>Equipe dedicada para diagnóstico, implantação e acompanhamento continuo.</span>
+              </div>
+            </li>
+            <li class="diff-item">
+              <div class="diff-check" aria-hidden="true">
+                <svg viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M2 6l3 3 5-5" stroke="#14351C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="diff-item-text">
+                <strong>Conformidade ambiental garantida</strong>
+                <span>Produtos alinhados às normas ABNT e legislações ambientais vigentes no Brasil.</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="diff-right">
+          <div class="diff-values-grid">
+            <div class="diff-value-card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <h4>Sustentabilidade</h4>
+              <p>Cada produto é desenvolvido para minimizar o impacto no ecossistema local.</p>
+            </div>
+            <div class="diff-value-card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="M12 6v6l4 2"/>
+                </svg>
+              </div>
+              <h4>Inovação</h4>
+              <p>Pesquisa contínua em biotecnologia para soluções cada vez mais eficazes.</p>
+            </div>
+            <div class="diff-value-card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                </svg>
+              </div>
+              <h4>Compromisso Social</h4>
+              <p>Parcerias com NGOs e orgãos públicos para recuperação ambiental no Nordeste.</p>
+            </div>
+            <div class="diff-value-card">
+              <div class="icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                  <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+                </svg>
+              </div>
+              <h4>Transparência</h4>
+              <p>Rastreabilidade total dos ingredientes e resultados mensuráveis em cada projeto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIALS
+  ============================================================ -->
+  <section class="testimonials" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="testimonials-header">
+        <div>
+          <span class="section-label">O que dizem nossos clientes</span>
+          <h2 id="testimonials-heading">Resultados reais,<br>empresas reais</h2>
+        </div>
+        <p>Parceiros que migraram para higiene sustentável e sentiram a diferença na prática.</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <!-- Depoimento em destaque -->
+        <article class="testimonial-card featured">
+          <div class="testimonial-quote-mark">"</div>
+          <p class="testimonial-text">
+            Migramos toda a linha de higiene do hospital para os produtos da Nordeste Ambiental há dois anos. A redução no custo mensal foi de aproximadamente 30%, e os resultados na desinfecção continuam dentro dos padrões exigidos pela vigilância sanitária. O suporte técnico deles é o que faz a diferença — sempre presentes.
+          </p>
+          <div class="testimonial-stars" aria-label="5 estrelas">
+            <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+          </div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" aria-hidden="true">CM</div>
+            <div>
+              <div class="testimonial-author-name">Carlos Menezes</div>
+              <div class="testimonial-author-role">Gerente de Operações<br>Hospital Regional do Agreste, PE</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Coluna direita: dois depoimentos empilhados -->
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <article class="testimonial-card">
+            <div class="testimonial-quote-mark">"</div>
+            <p class="testimonial-text">
+              Trabalhar com produtos sem toxinas em uma escola faz toda a diferença. Pais e professores notaram a mudança. A equipe da Nordeste Ambiental capacitou nossos funcionários e o processo de limpeza ficou mais simples e seguro.
+            </p>
+            <div class="testimonial-stars" aria-label="5 estrelas">
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">PA</div>
+              <div>
+                <div class="testimonial-author-name">Patricia Albuquerque</div>
+                <div class="testimonial-author-role">Diretora Pedagógica<br>Colégio Santa Clara, Recife</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-quote-mark">"</div>
+            <p class="testimonial-text">
+              Nossa linha de produção exige higiene rigorosa. Os produtos da Nordeste Ambiental atendem as normas de segurança alimentar e ainda eliminamos compostos que preocupavam nossa equipe de qualidade.
+            </p>
+            <div class="testimonial-stars" aria-label="5 estrelas">
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">RS</div>
+              <div>
+                <div class="testimonial-author-name">Ricardo Souza</div>
+                <div class="testimonial-author-role">Gerente de Qualidade<br>Frigorífico São João, Caruaru</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Terceira coluna -->
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <article class="testimonial-card">
+            <div class="testimonial-quote-mark">"</div>
+            <p class="testimonial-text">
+              Usamos o Enzilimp nas fossas e caixas de gordura do condomínio há mais de um ano. O problema de odor sumiu completamente. É um produto que funciona de verdade, sem precisar de intervenções frequentes.
+            </p>
+            <div class="testimonial-stars" aria-label="5 estrelas">
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">FN</div>
+              <div>
+                <div class="testimonial-author-name">Fernanda Nóbrega</div>
+                <div class="testimonial-author-role">Síndica<br>Condomínio Jardins do Recife</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <div class="testimonial-quote-mark">"</div>
+            <p class="testimonial-text">
+              A consultoria inicial foi fundamental. Eles mapearam tudo, sugeriram os produtos certos para cada área e treinaram nossa equipe. Hoje gastamos menos e temos mais controle sobre o processo de higienização.
+            </p>
+            <div class="testimonial-stars" aria-label="5 estrelas">
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar" aria-hidden="true">MO</div>
+              <div>
+                <div class="testimonial-author-name">Marcos Oliveira</div>
+                <div class="testimonial-author-role">Coordenador de Facilities<br>Rede de Farmácias NordeFarma</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA SECTION
+  ============================================================ -->
+  <section class="cta-section" aria-labelledby="cta-heading">
+    <div class="cta-texture" aria-hidden="true"></div>
+    <div class="container">
+      <div class="cta-inner">
+        <div class="cta-text">
+          <span class="section-label">Pronto para transformar sua operação?</span>
+          <h2 id="cta-heading">
+            Receba um orçamento<br>
+            <em>personalizado agora</em>
+          </h2>
+          <p>
+            Fale diretamente com nossos especialistas pelo WhatsApp. Analisamos o seu contexto e desenvolvemos uma proposta sob medida para a sua empresa, sem compromisso.
+          </p>
+        </div>
+
+        <div class="cta-action">
+          <div class="cta-card">
+            <p class="cta-card-label">
+              Atendimento direto<br>sem formulários
+            </p>
+            <a
+              href="https://wa.me/5581933009302?text=Olá!%20Gostaria%20de%20um%20orçamento%20personalizado%20para%20a%20minha%20empresa.%20Vim%20pelo%20site."
+              class="cta-wpp-btn"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Fale conosco pelo WhatsApp agora"
+            >
+              <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.556 4.116 1.528 5.847L0 24l6.335-1.506A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.372l-.36-.213-3.76.894.952-3.657-.235-.376A9.818 9.818 0 012.182 12c0-5.419 4.399-9.818 9.818-9.818 5.42 0 9.818 4.399 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/>
+              </svg>
+              Falar no WhatsApp
+            </a>
+            <p class="cta-note">Resposta em até 1 hora em dias uteis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT STRIP
+  ============================================================ -->
+  <section class="contact-strip" aria-labelledby="contact-heading">
+    <div class="container">
+
+      <div class="contact-header">
+        <span class="section-label">Fale com a gente</span>
+        <h2 id="contact-heading">Entre em contato</h2>
+        <p>Atendemos Recife e todo o Nordeste. Fale diretamente com nossa equipe pelo WhatsApp ou nos visite.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Esquerda: endereço + mapa -->
+        <div>
+          <p class="contact-location-label">Nosso endereço</p>
+
+          <div class="contact-address-card">
+            <div class="contact-address-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+            </div>
+            <div>
+              <div class="contact-address-name">Nordeste Ambiental</div>
+              <div class="contact-address-lines">
+                R. Visc. de Abaeté, 83 — Tamarineira<br>
+                Recife — PE
+              </div>
+              <a
+                href="https://maps.google.com/?q=R.+Visc.+de+Abaeté,+83,+Tamarineira,+Recife"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-map-link"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+                </svg>
+                Ver no Google Maps
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.4!2d-34.9056!3d-8.0380!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18b0!2sR.+Visc.+de+Aba%C3%A9t%C3%A9%2C+83%2C+Tamarineira%2C+Recife+-+PE!5e0!3m2!1spt!2sbr!4v1680000000000"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Localização da Nordeste Ambiental no Google Maps"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Direita: ações de contato -->
+        <div>
+          <p class="contact-actions-label">Fale conosco</p>
+
+          <a
+            href="https://wa.me/5581933009302?text=Olá!%20Gostaria%20de%20mais%20informações%20sobre%20os%20serviços%20da%20Nordeste%20Ambiental."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-btn-wpp"
+            aria-label="Enviar mensagem pelo WhatsApp"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.556 4.116 1.528 5.847L0 24l6.335-1.506A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.372l-.36-.213-3.76.894.952-3.657-.235-.376A9.818 9.818 0 012.182 12c0-5.419 4.399-9.818 9.818-9.818 5.42 0 9.818 4.399 9.818 9.818 0 5.42-4.398 9.818-9.818 9.818z"/>
+            </svg>
+            WhatsApp: (81) 9.3300-9302
+          </a>
+
+          <a
+            href="https://www.instagram.com/ne.ambiental"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-btn-ig"
+            aria-label="Seguir no Instagram"
+          >
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+            </svg>
+            @ne.ambiental
+          </a>
+
+          <div class="contact-cta-card">
+            <h3>Solicite um orçamento</h3>
+            <p>Analisamos o seu contexto e desenvolvemos uma proposta sob medida para a sua empresa, sem compromisso.</p>
+            <a
+              href="https://wa.me/5581933009302?text=Olá!%20Gostaria%20de%20solicitar%20um%20orçamento%20personalizado%20para%20minha%20empresa."
+              target="_blank"
+              rel="noopener noreferrer"
+              class="contact-cta-btn"
+              aria-label="Solicitar orçamento pelo WhatsApp"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/>
+              </svg>
+              Solicitar Orçamento
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="logo_vertical_neambiental.png" alt="Nordeste Ambiental" class="footer-logo-img" />
+        </div>
+        <p class="footer-copy">
+          &copy; 2026 Nordeste Ambiental. Todos os direitos reservados.
+        </p>
+        <nav class="footer-links" aria-label="Links do rodapé">
+          <a href="#servicos">Serviços</a>
+          <a href="#produtos">Produtos</a>
+          <a
+            href="https://wa.me/5581933009302?text=Olá!%20Gostaria%20de%20entrar%20em%20contato%20com%20a%20Nordeste%20Ambiental."
+            target="_blank"
+            rel="noopener noreferrer"
+          >Contato</a>
+        </nav>
+        <a
+          href="https://www.simpli.ia.br"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="footer-simpli"
+          aria-label="Desenvolvido por Simpli"
+        >
+          <img src="favicon-simpli.svg" alt="Simpli" class="footer-simpli-icon" />
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       JAVASCRIPT
+  ============================================================ -->
+  <script>
+    // Header scroll behavior
+    const header = document.getElementById('siteHeader');
+    const onScroll = () => {
+      header.classList.toggle('scrolled', window.scrollY > 60);
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+
+    // Mobile nav toggle
+    const navToggle = document.getElementById('navToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+
+    navToggle.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      mobileMenu.setAttribute('aria-hidden', !isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('is-open');
+        navToggle.setAttribute('aria-expanded', 'false');
+        mobileMenu.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Intersection Observer for scroll animations
+    const animatedEls = document.querySelectorAll(
+      '.service-tile, .segment-card, .product-card, .diff-value-card, .hero-stat-card'
+    );
+
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      animatedEls.forEach((el, i) => {
+        el.style.opacity = '0';
+        el.style.transform = 'translateY(20px)';
+        el.style.transition = `opacity 0.5s ease ${(i % 4) * 0.08}s, transform 0.5s ease ${(i % 4) * 0.08}s`;
+        observer.observe(el);
+      });
+    }
+  </script>
+
+</body>
+</html>
