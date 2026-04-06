@@ -1324,11 +1324,12 @@
     }
 
     .testimonial-photo-wrap {
-      width: 100%;
-      height: 200px;
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
       overflow: hidden;
-      background: var(--mint);
-      position: relative;
+      border: 3px solid var(--border);
+      flex-shrink: 0;
     }
     .testimonial-photo-wrap img {
       width: 100%;
@@ -1387,8 +1388,8 @@
 
     .testimonial-author {
       display: flex;
-      flex-direction: column;
-      gap: 2px;
+      align-items: center;
+      gap: 12px;
       padding-top: 16px;
       border-top: 1px solid var(--border);
       margin-top: auto;
@@ -2564,9 +2565,6 @@
 
         <!-- Luciana Raposo -->
         <article class="testimonial-card">
-          <div class="testimonial-photo-wrap">
-            <img src="luciana-raposo.png" alt="Luciana Raposo" loading="lazy" />
-          </div>
           <div class="testimonial-body">
             <div class="testimonial-quote-mark">"</div>
             <p class="testimonial-text">
@@ -2580,17 +2578,19 @@
               <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
             <div class="testimonial-author">
-              <div class="testimonial-author-name">Luciana Raposo</div>
-              <div class="testimonial-author-role">Arquiteta especializada em hotelaria</div>
+              <div class="testimonial-photo-wrap">
+                <img src="luciana-raposo.png" alt="Luciana Raposo" loading="lazy" />
+              </div>
+              <div>
+                <div class="testimonial-author-name">Luciana Raposo</div>
+                <div class="testimonial-author-role">Arquiteta especializada em hotelaria</div>
+              </div>
             </div>
           </div>
         </article>
 
         <!-- Leonardo José de Barros -->
         <article class="testimonial-card">
-          <div class="testimonial-photo-wrap">
-            <img src="leonardo-barros.jpg" alt="Leonardo José de Barros" loading="lazy" />
-          </div>
           <div class="testimonial-body">
             <div class="testimonial-quote-mark">"</div>
             <p class="testimonial-text">
@@ -2604,17 +2604,19 @@
               <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
             <div class="testimonial-author">
-              <div class="testimonial-author-name">Leonardo José de Barros</div>
-              <div class="testimonial-author-role">Encarregado de Manutenção<br>Bora Bora Carneiros</div>
+              <div class="testimonial-photo-wrap">
+                <img src="leonardo-barros.jpg" alt="Leonardo José de Barros" loading="lazy" />
+              </div>
+              <div>
+                <div class="testimonial-author-name">Leonardo José de Barros</div>
+                <div class="testimonial-author-role">Encarregado de Manutenção<br>Bora Bora Carneiros</div>
+              </div>
             </div>
           </div>
         </article>
 
         <!-- Bruno Rodrigues -->
         <article class="testimonial-card">
-          <div class="testimonial-photo-wrap">
-            <img src="bruno-rodrigues.jpeg" alt="Bruno Rodrigues" loading="lazy" />
-          </div>
           <div class="testimonial-body">
             <div class="testimonial-quote-mark">"</div>
             <p class="testimonial-text">
@@ -2628,8 +2630,13 @@
               <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
             <div class="testimonial-author">
-              <div class="testimonial-author-name">Bruno Rodrigues</div>
-              <div class="testimonial-author-role">Sócio e Diretor de Operações<br>Verdiera</div>
+              <div class="testimonial-photo-wrap">
+                <img src="bruno-rodrigues.jpeg" alt="Bruno Rodrigues" loading="lazy" />
+              </div>
+              <div>
+                <div class="testimonial-author-name">Bruno Rodrigues</div>
+                <div class="testimonial-author-role">Sócio e Diretor de Operações<br>Verdiera</div>
+              </div>
             </div>
           </div>
         </article>
