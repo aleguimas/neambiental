@@ -1303,8 +1303,8 @@
 
     .testimonials-grid {
       display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr;
-      gap: 16px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
       align-items: start;
     }
 
@@ -1312,26 +1312,38 @@
       background: #ffffff;
       border: 1px solid var(--border);
       border-radius: var(--radius-lg);
-      padding: 36px 32px;
+      overflow: hidden;
       transition: var(--transition);
       display: flex;
       flex-direction: column;
-      gap: 20px;
     }
     .testimonial-card:hover {
       border-color: rgba(134,194,64,0.4);
       box-shadow: 0 4px 24px rgba(134,194,64,0.1);
+      transform: translateY(-3px);
     }
 
-    /* Depoimento em destaque — maior */
-    .testimonial-card.featured {
-      background: var(--dark);
-      border-color: var(--dark);
-      padding: 44px 40px;
+    .testimonial-photo-wrap {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      background: var(--mint);
+      position: relative;
     }
-    .testimonial-card.featured:hover {
-      border-color: var(--dark);
-      box-shadow: 0 8px 40px rgba(20,53,28,0.2);
+    .testimonial-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    .testimonial-body {
+      padding: 28px 28px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      flex: 1;
     }
 
     .testimonial-quote-mark {
@@ -1375,54 +1387,22 @@
 
     .testimonial-author {
       display: flex;
-      align-items: center;
-      gap: 12px;
+      flex-direction: column;
+      gap: 2px;
       padding-top: 16px;
       border-top: 1px solid var(--border);
-    }
-    .testimonial-card.featured .testimonial-author {
-      border-top-color: rgba(255,255,255,0.1);
-    }
-    .testimonial-avatar {
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      background: var(--mint);
-      border: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-family: var(--font-head);
-      font-size: 0.8rem;
-      font-weight: 700;
-      color: var(--lime2);
-      flex-shrink: 0;
-    }
-    .testimonial-card.featured .testimonial-avatar {
-      width: 48px;
-      height: 48px;
-      font-size: 0.9rem;
-      background: rgba(134,194,64,0.15);
-      border-color: rgba(134,194,64,0.25);
-      color: var(--lime);
+      margin-top: auto;
     }
     .testimonial-author-name {
       font-family: var(--font-head);
-      font-size: 0.85rem;
-      font-weight: 600;
+      font-size: 0.88rem;
+      font-weight: 700;
       color: var(--dark);
-      margin-bottom: 2px;
-    }
-    .testimonial-card.featured .testimonial-author-name {
-      color: var(--white);
     }
     .testimonial-author-role {
       font-size: 0.76rem;
-      color: rgba(20,53,28,0.45);
-      line-height: 1.3;
-    }
-    .testimonial-card.featured .testimonial-author-role {
-      color: rgba(255,255,255,0.4);
+      color: var(--muted);
+      line-height: 1.4;
     }
 
     /* ============================================================
@@ -1887,8 +1867,8 @@
       .testimonials-grid { grid-template-columns: 1fr; }
       .testimonials-header { flex-direction: column; align-items: flex-start; gap: 8px; }
       .testimonials-header p { text-align: left; max-width: 100%; }
-      .testimonial-card { padding: 28px 24px; }
-      .testimonial-card.featured { padding: 32px 28px; }
+      .testimonial-photo-wrap { height: 160px; }
+      .testimonial-body { padding: 20px 20px 24px; }
 
       /* CTA */
       .cta-inner { gap: 36px; }
@@ -2582,34 +2562,39 @@
 
       <div class="testimonials-grid">
 
-        <!-- Depoimento em destaque -->
-        <article class="testimonial-card featured">
-          <div class="testimonial-quote-mark">"</div>
-          <p class="testimonial-text">
-            Migramos toda a linha de higiene do hospital para os produtos da Nordeste Ambiental há dois anos. A redução no custo mensal foi de aproximadamente 30%, e os resultados na desinfecção continuam dentro dos padrões exigidos pela vigilância sanitária. O suporte técnico deles é o que faz a diferença — sempre presentes.
-          </p>
-          <div class="testimonial-stars" aria-label="5 estrelas">
-            <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+        <!-- Luciana Raposo -->
+        <article class="testimonial-card">
+          <div class="testimonial-photo-wrap">
+            <img src="luciana-raposo.png" alt="Luciana Raposo" loading="lazy" />
           </div>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar" aria-hidden="true">CM</div>
-            <div>
-              <div class="testimonial-author-name">Carlos Menezes</div>
-              <div class="testimonial-author-role">Gerente de Operações<br>Hospital Regional do Agreste, PE</div>
+          <div class="testimonial-body">
+            <div class="testimonial-quote-mark">"</div>
+            <p class="testimonial-text">
+              Eu sempre busquei cuidar do planeta da mesma forma que cuido dos produtos da minha casa, priorizando saúde, sustentabilidade e alimentação. Quando conheci os produtos da Nordeste Ambiental, especialmente a Laudin, percebi que minhas roupas ficaram mais duráveis, macias e com um aroma maravilhoso, usando menos produto. Sou arquiteta especializada em hotelaria e recomendo esses produtos aos meus clientes. Confio e utilizo!
+            </p>
+            <div class="testimonial-stars" aria-label="5 estrelas">
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-author-name">Luciana Raposo</div>
+              <div class="testimonial-author-role">Arquiteta especializada em hotelaria</div>
             </div>
           </div>
         </article>
 
-        <!-- Coluna direita: dois depoimentos empilhados -->
-        <div style="display:flex;flex-direction:column;gap:16px;">
-          <article class="testimonial-card">
+        <!-- Leonardo José de Barros -->
+        <article class="testimonial-card">
+          <div class="testimonial-photo-wrap">
+            <img src="leonardo-barros.jpg" alt="Leonardo José de Barros" loading="lazy" />
+          </div>
+          <div class="testimonial-body">
             <div class="testimonial-quote-mark">"</div>
             <p class="testimonial-text">
-              Trabalhar com produtos sem toxinas em uma escola faz toda a diferença. Pais e professores notaram a mudança. A equipe da Nordeste Ambiental capacitou nossos funcionários e o processo de limpeza ficou mais simples e seguro.
+              Utilizamos aqui o Bioremediador Enzilimp a mais de um ano e até o presente momento os resultados são satisfatórios.
             </p>
             <div class="testimonial-stars" aria-label="5 estrelas">
               <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -2619,18 +2604,21 @@
               <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
             <div class="testimonial-author">
-              <div class="testimonial-avatar" aria-hidden="true">PA</div>
-              <div>
-                <div class="testimonial-author-name">Patricia Albuquerque</div>
-                <div class="testimonial-author-role">Diretora Pedagógica<br>Colégio Santa Clara, Recife</div>
-              </div>
+              <div class="testimonial-author-name">Leonardo José de Barros</div>
+              <div class="testimonial-author-role">Encarregado de Manutenção<br>Bora Bora Carneiros</div>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="testimonial-card">
+        <!-- Bruno Rodrigues -->
+        <article class="testimonial-card">
+          <div class="testimonial-photo-wrap">
+            <img src="bruno-rodrigues.jpeg" alt="Bruno Rodrigues" loading="lazy" />
+          </div>
+          <div class="testimonial-body">
             <div class="testimonial-quote-mark">"</div>
             <p class="testimonial-text">
-              Nossa linha de produção exige higiene rigorosa. Os produtos da Nordeste Ambiental atendem as normas de segurança alimentar e ainda eliminamos compostos que preocupavam nossa equipe de qualidade.
+              Utilizei o Neopan Oxy para limpeza de ambientes com animais e tive um resultado incrível. O cheiro de urina de gatos simplesmente sumiu. Por indicação da empresa, acabei usando na limpeza dos estofados da minha casa e foi espetacular. Mesmo as manchas antigas de uso saíram em poucos minutos de aplicação.
             </p>
             <div class="testimonial-stars" aria-label="5 estrelas">
               <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
@@ -2640,59 +2628,11 @@
               <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
             <div class="testimonial-author">
-              <div class="testimonial-avatar" aria-hidden="true">RS</div>
-              <div>
-                <div class="testimonial-author-name">Ricardo Souza</div>
-                <div class="testimonial-author-role">Gerente de Qualidade<br>Frigorífico São João, Caruaru</div>
-              </div>
+              <div class="testimonial-author-name">Bruno Rodrigues</div>
+              <div class="testimonial-author-role">Sócio e Diretor de Operações<br>Verdiera</div>
             </div>
-          </article>
-        </div>
-
-        <!-- Terceira coluna -->
-        <div style="display:flex;flex-direction:column;gap:16px;">
-          <article class="testimonial-card">
-            <div class="testimonial-quote-mark">"</div>
-            <p class="testimonial-text">
-              Usamos o Enzilimp nas fossas e caixas de gordura do condomínio há mais de um ano. O problema de odor sumiu completamente. É um produto que funciona de verdade, sem precisar de intervenções frequentes.
-            </p>
-            <div class="testimonial-stars" aria-label="5 estrelas">
-              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            </div>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar" aria-hidden="true">FN</div>
-              <div>
-                <div class="testimonial-author-name">Fernanda Nóbrega</div>
-                <div class="testimonial-author-role">Síndica<br>Condomínio Jardins do Recife</div>
-              </div>
-            </div>
-          </article>
-
-          <article class="testimonial-card">
-            <div class="testimonial-quote-mark">"</div>
-            <p class="testimonial-text">
-              A consultoria inicial foi fundamental. Eles mapearam tudo, sugeriram os produtos certos para cada área e treinaram nossa equipe. Hoje gastamos menos e temos mais controle sobre o processo de higienização.
-            </p>
-            <div class="testimonial-stars" aria-label="5 estrelas">
-              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              <svg class="testimonial-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            </div>
-            <div class="testimonial-author">
-              <div class="testimonial-avatar" aria-hidden="true">MO</div>
-              <div>
-                <div class="testimonial-author-name">Marcos Oliveira</div>
-                <div class="testimonial-author-role">Coordenador de Facilities<br>Rede de Farmácias NordeFarma</div>
-              </div>
-            </div>
-          </article>
-        </div>
+          </div>
+        </article>
 
       </div>
     </div>
