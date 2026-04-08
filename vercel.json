@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "neambiental.com"
+        }
+      ],
+      "destination": "https://www.neambiental.com/$1",
+      "permanent": true
+    }
+  ]
+}
